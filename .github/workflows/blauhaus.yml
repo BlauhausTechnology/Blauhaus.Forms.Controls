@@ -16,9 +16,7 @@ jobs:
         node ./scripts/getversion.js
      - name: Build NuGet Packages
        run: |
-        dotnet pack -p:PackageVersion=${VERSION_NAME} ./src/Blauhaus.DeviceServices.sln --configuration Release --output ./
-        dotnet test ./src/Blauhaus.DeviceServices.sln
+        dotnet pack -p:PackageVersion=${VERSION_NAME} ./src/Blauhaus.Forms.Controls.sln --configuration Release --output ./
      - name: Deploy NuGet Packages
        run: |
-        dotnet nuget push /home/runner/work/Blauhaus.DeviceServices/Blauhaus.DeviceServices/Blauhaus.DeviceServices.${VERSION_NAME}.nupkg -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json
-        dotnet nuget push /home/runner/work/Blauhaus.DeviceServices/Blauhaus.DeviceServices/Blauhaus.DeviceServices.Abstractions.${VERSION_NAME}.nupkg -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json
+        dotnet nuget push /home/runner/work/Blauhaus.Forms.Controls/Blauhaus.Forms.Controls.Core/Blauhaus.Forms.Controls.Core.${VERSION_NAME}.nupkg -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json
