@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Company>Blauhaus</Company>
+    <Authors>Blauhaus</Authors>
+    <Version>0.0.1</Version>
+    <Description>Simple builderable wrappers for Xamarin Forms controls</Description>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Blauhaus.Ioc.Abstractions" Version="0.3.1" />
+    <PackageReference Include="Prism.DryIoc.Forms" Version="7.2.0.1367" />
+    <PackageReference Include="Xamarin.Forms" Version="4.2.0.848062" />
+  </ItemGroup>
+
+</Project>
