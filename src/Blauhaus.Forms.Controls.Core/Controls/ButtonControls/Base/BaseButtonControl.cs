@@ -1,22 +1,14 @@
 ﻿using System;
 using System.Linq.Expressions;
 using System.Windows.Input;
+using Blauhaus.Common.Utils.Extensions;
 using Prism.Commands;
-using Reveye.Client.Extensions;
-using Reveye.Client.Services.Config;
-using Reveye.Client.Services.Config.AppColours;
 using Xamarin.Forms;
 
-namespace Reveye.Client.Controls.ButtonControls.Base
+namespace Blauhaus.Forms.Controls.Core.Controls.ButtonControls.Base
 {
     public abstract class BaseButtonControl<TButtonControl> : Button where TButtonControl : BaseButtonControl<TButtonControl>
     {
-        protected IAppColours AppColours;
-
-        protected BaseButtonControl(IAppConfigService appConfigService)
-        {
-            AppColours = appConfigService.AppColours;
-        }
 
         public TButtonControl BindCommand<TViewModel>(Expression<Func<TViewModel, ICommand>> viewModelProperty)
         {

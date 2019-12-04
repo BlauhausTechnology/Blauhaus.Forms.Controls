@@ -1,6 +1,6 @@
 ﻿using Blauhaus.Forms.Controls.Core.Controls.ButtonControls.Base;
 
-namespace Reveye.Client.Controls.ButtonControls
+namespace Blauhaus.Forms.Controls.Core.Controls.ButtonControls
 {
     public class ButtonControl : BaseButtonControl<ButtonControl>
     {

@@ -1,8 +1,8 @@
-﻿using Blauhaus.Forms.Controls.Core.Controls.EntryControls;
+﻿using Blauhaus.Forms.Controls.Core.Controls.ButtonControls;
+using Blauhaus.Forms.Controls.Core.Controls.EntryControls;
 using Blauhaus.Forms.Controls.Core.Controls.LabelControls;
 using Blauhaus.Forms.Controls.Core.Controls.LayoutControls;
 using Blauhaus.Ioc.Abstractions;
-using Reveye.Client.Controls.ButtonControls;
 
 namespace Blauhaus.Forms.Controls.Core._Ioc
 {
