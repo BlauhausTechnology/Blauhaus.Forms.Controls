@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq.Expressions;
+using Blauhaus.Common.Utils.Extensions;
 using Blauhaus.Forms.Controls.Core.Extensions;
 using Xamarin.Forms;
 
