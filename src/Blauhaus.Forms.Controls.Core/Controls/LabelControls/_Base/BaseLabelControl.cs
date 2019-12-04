@@ -4,7 +4,7 @@ using Blauhaus.Forms.Controls.Core.Extensions;
 using Xamarin.Forms;
 using Color = System.Drawing.Color;
 
-namespace Blauhaus.Forms.Controls.Core.LabelControls._Base
+namespace Blauhaus.Forms.Controls.Core.Controls.LabelControls._Base
 {
     public abstract class BaseLabelControl<TControl> : Label where TControl : BaseLabelControl<TControl>
     {

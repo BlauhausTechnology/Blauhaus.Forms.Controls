@@ -1,4 +1,4 @@
-﻿namespace Blauhaus.Forms.Controls.Core.LabelControls._Base
+﻿namespace Blauhaus.Forms.Controls.Core.Controls.LabelControls._Base
 {
     public class FontDefinition
     {

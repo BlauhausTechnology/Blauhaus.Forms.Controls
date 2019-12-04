@@ -1,4 +1,4 @@
-﻿using Blauhaus.Forms.Controls.Core.LabelControls;
+﻿using Blauhaus.Forms.Controls.Core.Controls.LabelControls;
 using Blauhaus.Ioc.Abstractions;
 
 namespace Blauhaus.Forms.Controls.Core._Ioc
