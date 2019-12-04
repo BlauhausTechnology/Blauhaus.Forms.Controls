@@ -2,6 +2,7 @@
 using Blauhaus.Forms.Controls.Core.Controls.LabelControls;
 using Blauhaus.Forms.Controls.Core.Controls.LayoutControls;
 using Blauhaus.Ioc.Abstractions;
+using Reveye.Client.Controls.ButtonControls;
 
 namespace Blauhaus.Forms.Controls.Core._Ioc
 {
@@ -13,6 +14,7 @@ namespace Blauhaus.Forms.Controls.Core._Ioc
             iocService.RegisterType<StacklayoutControl>();
             iocService.RegisterType<FlexlayoutControl>();
             iocService.RegisterType<EntryControl>();
+            iocService.RegisterType<ButtonControl>();
 
             return iocService;
         }
