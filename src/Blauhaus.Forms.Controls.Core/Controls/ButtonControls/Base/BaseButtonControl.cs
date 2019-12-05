@@ -2,7 +2,6 @@
 using System.Linq.Expressions;
 using System.Windows.Input;
 using Blauhaus.Common.Utils.Extensions;
-using Prism.Commands;
 using Xamarin.Forms;
 
 namespace Blauhaus.Forms.Controls.Core.Controls.ButtonControls.Base
@@ -25,7 +24,7 @@ namespace Blauhaus.Forms.Controls.Core.Controls.ButtonControls.Base
 
         public TButtonControl BindVisibilityToCommandCanExecute(string viewModelPropertyName)
         {
-            this.SetBinding(IsVisibleProperty, $"{viewModelPropertyName}.{nameof(DelegateCommand.CanExecute)}");
+            this.SetBinding(IsVisibleProperty, $"{viewModelPropertyName}.{nameof(ICommand.CanExecute)}");
             return this as TButtonControl;
         }
 
