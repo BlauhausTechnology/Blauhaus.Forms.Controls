@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq.Expressions;
+using Blauhaus.Common.Utils.Extensions;
 using Blauhaus.Forms.Controls.Core.Extensions;
 using Xamarin.Forms;
 using Color = System.Drawing.Color;
@@ -8,6 +9,8 @@ namespace Blauhaus.Forms.Controls.Core.Controls.LabelControls._Base
 {
     public abstract class BaseLabelControl<TControl> : Label where TControl : BaseLabelControl<TControl>
     {
+        
+        protected TapGestureRecognizer TapGestureRecognizer;
 
         public TControl WithText(string text)
         {
@@ -32,6 +35,13 @@ namespace Blauhaus.Forms.Controls.Core.Controls.LabelControls._Base
             return this as TControl;
         }
 
+        public TControl BindTapCommand(string viewModelPropertyName)
+        {
+            TapGestureRecognizer =  new TapGestureRecognizer();
+            TapGestureRecognizer.SetBinding(TapGestureRecognizer.CommandProperty, viewModelPropertyName);
+            GestureRecognizers.Add(TapGestureRecognizer);
+            return this as TControl;
+        }
 
         public TControl WithHorizontalTextAlignment(TextAlignment alignment)
         {

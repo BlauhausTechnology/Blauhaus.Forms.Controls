@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using System.Linq.Expressions;
+using Blauhaus.Common.Utils.Extensions;
 using Xamarin.Forms;
 
 namespace Blauhaus.Forms.Controls.Core.Extensions
