@@ -11,7 +11,7 @@ using Blauhaus.Ioc.Abstractions;
 
 namespace Blauhaus.Forms.Controls.Core._Ioc
 {
-    public static class IocRegistration
+    public static class IocServiceExtensions
     {
 
         public static IIocService RegisterControls(this IIocService iocService)
@@ -33,7 +33,7 @@ namespace Blauhaus.Forms.Controls.Core._Ioc
             where TMaterialPalette : class, IMaterialPalette
         {
             iocService.RegisterImplementation<IMaterialPalette, TMaterialPalette>();
-            iocService.RegisterType<IMaterialPalette>();
+            iocService.RegisterType<TMaterialPalette>();
             iocService.RegisterType<ForegroundFrameControl>();
             iocService.RegisterType<PrimaryActivityIndicatorControlControl>();
             iocService.RegisterType<SecondaryActivityIndicatorControlControl>();
