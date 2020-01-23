@@ -3,9 +3,9 @@ using Blauhaus.Forms.Controls.Core.Controls.ActivityIndicatorControls._Base;
 
 namespace Blauhaus.Forms.Controls.Core.Controls.ActivityIndicatorControls
 {
-    public class PrimaryActivityIndicatorControlControl : BaseMaterialActivityIndicatorControlControl<PrimaryActivityIndicatorControlControl>
+    public class PrimaryActivityIndicatorControl : BaseMaterialActivityIndicatorControlControl<PrimaryActivityIndicatorControl>
     {
-        public PrimaryActivityIndicatorControlControl(IMaterialPalette materialPalette) : base(materialPalette)
+        public PrimaryActivityIndicatorControl(IMaterialPalette materialPalette) : base(materialPalette)
         {
             WithColor(MaterialPalette.Primary);
         }

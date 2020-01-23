@@ -35,8 +35,8 @@ namespace Blauhaus.Forms.Controls.Core._Ioc
             iocService.RegisterImplementation<IMaterialPalette, TMaterialPalette>();
             iocService.RegisterType<TMaterialPalette>();
             iocService.RegisterType<ForegroundFrameControl>();
-            iocService.RegisterType<PrimaryActivityIndicatorControlControl>();
-            iocService.RegisterType<SecondaryActivityIndicatorControlControl>();
+            iocService.RegisterType<PrimaryActivityIndicatorControl>();
+            iocService.RegisterType<SecondaryActivityIndicatorControl>();
             iocService.RegisterType<PrimaryButtonControl>();
             iocService.RegisterType<SecondaryButtonControl>();
 
