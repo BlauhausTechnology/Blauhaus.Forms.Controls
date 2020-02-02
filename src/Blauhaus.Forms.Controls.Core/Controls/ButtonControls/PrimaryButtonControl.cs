@@ -3,7 +3,7 @@ using Blauhaus.Forms.Controls.Core.Controls.ButtonControls.Base;
 
 namespace Blauhaus.Forms.Controls.Core.Controls.ButtonControls
 {
-    public class PrimaryButtonControl : BaseMaterialButonControl<ButtonControl>
+    public class PrimaryButtonControl : BaseMaterialButonControl<PrimaryButtonControl>
     {
         public PrimaryButtonControl(IMaterialPalette materialPalette) : base(materialPalette)
         {

@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using Blauhaus.Forms.Controls.Core.Converters;
+using Xamarin.Forms;
 
 namespace Blauhaus.Forms.Controls.Core.Extensions
 {
@@ -25,6 +26,12 @@ namespace Blauhaus.Forms.Controls.Core.Extensions
         public static TControl BindIsVisible<TControl>(this TControl control, string viewModelPropertyName) where TControl : VisualElement
         {
             control.SetBinding(VisualElement.IsVisibleProperty, viewModelPropertyName);
+            return control;
+        }
+        
+        public static TControl BindIsVisibleInverse<TControl>(this TControl control, string viewModelPropertyName) where TControl : VisualElement
+        {
+            control.SetBinding(VisualElement.IsVisibleProperty, viewModelPropertyName, BindingMode.Default, new BoolInverseConverter());
             return control;
         }
 
