@@ -1,4 +1,5 @@
-﻿using Blauhaus.Forms.Controls.Core.Converters;
+﻿using System;
+using Blauhaus.Forms.Controls.Core.Converters;
 using Xamarin.Forms;
 
 namespace Blauhaus.Forms.Controls.Core.Extensions
@@ -47,6 +48,13 @@ namespace Blauhaus.Forms.Controls.Core.Extensions
             return control;
         }
 
+        
+        public static TControl OnTap<TControl>(this TControl control, Action action) where TControl : View
+        {
+            var tgr = new TapGestureRecognizer {Command = new Command(action)};
+            control.GestureRecognizers.Add(tgr);
+            return control;
+        }
 
     }
 }
